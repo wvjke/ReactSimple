@@ -62,11 +62,6 @@ class App extends Component {
         if (term.length === 0) {
             return items;
         }
-
-        // items.filter(item => {
-        //     return item.name.indexOf(term.toUpperCase()) > -1
-        // })
-
         return items.filter(item => {
             return item.name.toLowerCase().indexOf(term.toLowerCase()) > -1
         })
